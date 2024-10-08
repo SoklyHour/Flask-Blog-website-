@@ -9,5 +9,10 @@ def create_app():
 
     @app.route("/")
     def home():
-        
+        return "<h1>Hello<h1>"
+    
+    @app.route("/profile")
+    def profile():
+        return "<h1>Profile<h1>"
+    
     return app
